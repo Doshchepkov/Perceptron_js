@@ -1,0 +1,134 @@
+/* Обнуляем отступы и устанавливаем модель коробки для всех элементов */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #a8eefc;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #a8eefc;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    background-color: #1994ec;
+    padding: 20px;
+    border-radius: 32px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #000000;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #000000;
+}
+
+main {
+    background-color: #a8eefc;
+    padding: 20px;
+    border-radius: 32px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main section {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 32px;
+    border: 1px solid #000000;
+}
+
+.about {
+    background-color: #1994ec;
+}
+
+.contact {
+    background-color: #1994ec;
+}
+
+main h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+main p, main ul {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.perceptron {
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+#drawingCanvas {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #333333;
+    background-color: white;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    margin: 10px auto;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#predictionResult {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 100px;
+    color: #333333;
+}
+
+.arrow {
+    margin-left: 5px; /* Отступ слева от текста */
+    font-size: 1.2em; /* Размер символа стрелки */
+}
